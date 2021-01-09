@@ -307,19 +307,19 @@ config BR2_CCACHE
 	  This option will enable the use of ccache, a compiler cache.
 	  It will cache the result of previous builds to speed up future
 	  builds. By default, the cache is stored in
-	  $HOME/.buildroot-ccache.
+	  $(TOPDIR)/.buildroot-ccache.
 
 	  Note that Buildroot does not try to invalidate the cache
 	  contents when the compiler changes in an incompatible way.
 	  Therefore, if you make a change to the compiler version and/or
 	  configuration, you are responsible for purging the ccache
-	  cache by removing the $HOME/.buildroot-ccache directory.
+	  cache by removing the $(TOPDIR)/.buildroot-ccache directory.
 
 if BR2_CCACHE
 
 config BR2_CCACHE_DIR
 	string "Compiler cache location"
-	default "$(HOME)/.buildroot-ccache"
+	default "$(TOPDIR)/.buildroot-ccache"
 	help
 	  Where ccache should store cached files.
 	  If the Linux shell environment has defined the BR2_CCACHE_DIR

@@ -243,7 +243,7 @@ config BR2_BACKUP_SITE
 
 config BR2_KERNEL_MIRROR
 	string "Kernel.org mirror"
-	default "https://cdn.kernel.org/pub"
+	default "https://mirrors.ustc.edu.cn/kernel.org"
 	help
 	  kernel.org is mirrored on a number of servers around the
 	  world. The following allows you to select your preferred

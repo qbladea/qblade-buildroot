@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# load nftables rule
+#
+
+NFT="/usr/sbin/nft"
+RULE_SET="/etc/nftables.rule"
+
+# load custom
+[ -r "/etc/default/nftables" ] && . "/etc/default/nftables"
+
+start() {
+    echo -n "Loading nftables rule ${RULE_SET} : "
+    ${NFT} -f ${RULE_SET}
+    if [ "$?" = "0" ]; then
+	echo "OK"
+    else
+	echo "FAIL"
+    fi
+}
+
+stop() {
+    echo -n "Clearing nftables rule:"
+    ${NFT} flush ruleset
+    if [ "$?" = "0" ]; then
+	echo "OK"
+    else
+	echo "FAIL"
+    fi
+}
+
+case "$1" in
+    start)
+	start;;
+    restart|reload)
+	stop
+	start
+	;;
+    stop)
+	stop
+	:;;
+    *)
+	echo "Usage: $0 {start|stop|restart|reload}"
+	exit 1
+esac

@@ -53,4 +53,9 @@ define NFTABLES_LINUX_CONFIG_FIXUPS
 	$(call KCONFIG_ENABLE_OPT,CONFIG_NF_TABLES_INET)
 endef
 
+define NFTABLES_INSTALL_INIT_SYSV
+	$(INSTALL) -D -m 0755 package/nftables/S30nftables \
+		$(TARGET_DIR)/etc/init.d/S30nftables
+endef
+
 $(eval $(autotools-package))

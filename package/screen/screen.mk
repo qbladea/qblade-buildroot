@@ -28,10 +28,10 @@ SCREEN_POST_INSTALL_TARGET_HOOKS += SCREEN_INSTALL_SCREENRC
 
 # Add /usr/bin/screen to /etc/shells otherwise some login tools like dropbear
 # can reject the user connection. See man shells.
-define SCREEN_ADD_SCREEN_TO_SHELLS
-	grep -qsE '^/usr/bin/screen$$' $(TARGET_DIR)/etc/shells \
-		|| echo "/usr/bin/screen" >> $(TARGET_DIR)/etc/shells
-endef
-SCREEN_TARGET_FINALIZE_HOOKS += SCREEN_ADD_SCREEN_TO_SHELLS
+#define SCREEN_ADD_SCREEN_TO_SHELLS
+#	grep -qsE '^/usr/bin/screen$$' $(TARGET_DIR)/etc/shells \
+#		|| echo "/usr/bin/screen" >> $(TARGET_DIR)/etc/shells
+#endef
+#SCREEN_TARGET_FINALIZE_HOOKS += SCREEN_ADD_SCREEN_TO_SHELLS
 
 $(eval $(autotools-package))

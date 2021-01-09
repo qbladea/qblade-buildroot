@@ -303,6 +303,7 @@ config BR2_JLEVEL
 
 config BR2_CCACHE
 	bool "Enable compiler cache"
+	default y
 	help
 	  This option will enable the use of ccache, a compiler cache.
 	  It will cache the result of previous builds to speed up future

@@ -1,0 +1,17 @@
+flush ruleset
+
+table inet firewall {
+    chain inbound {
+        type filter hook input priority 0; policy drop;
+        iifname lo accept
+     }
+
+    chain forward {
+        type filter hook forward priority 0; policy drop;
+    }
+
+    chain outbound {
+        type filter hook output priority 0; policy drop;
+        iifname lo accept
+    }
+}

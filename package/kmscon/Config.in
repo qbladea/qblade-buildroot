@@ -1,0 +1,8 @@
+config BR2_PACKAGE_KMSCON
+	bool "kmscon"
+	depends on BR2_PACKAGE_HAS_UDEV
+	select BR2_PACKAGE_LIBDRM
+	select BR2_PACKAGE_LIBTSM
+	select BR2_PACKAGE_LIBXKBCOMMON
+	help
+	

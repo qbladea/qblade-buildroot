@@ -1519,6 +1519,7 @@ menu "Graphics"
 	source "package/wpewebkit/Config.in"
 	source "package/zbar/Config.in"
 	source "package/zxing-cpp/Config.in"
+        source "package/libtsm/Config.in"
 endmenu
 
 menu "Hardware handling"

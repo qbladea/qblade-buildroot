@@ -9,5 +9,4 @@ KMSCON_SITE = $(call github,Aetf,kmscon,$(KMSCON_VERSION))
 KMSCON_AUTORECONF = YES
 KMSCON_DEPENDENCIES += host-automake host-autoconf host-libtool libxkbcommon libtsm udev libdrm 
 
-
 $(eval $(autotools-package))

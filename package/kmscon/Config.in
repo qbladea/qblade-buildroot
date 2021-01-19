@@ -5,4 +5,5 @@ config BR2_PACKAGE_KMSCON
 	select BR2_PACKAGE_LIBTSM
 	select BR2_PACKAGE_LIBXKBCOMMON
 	help
+		Terminal Emulator
 	

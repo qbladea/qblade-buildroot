@@ -8,6 +8,11 @@ cat board/lenovo100schromebook/nftables.rule > ${TARGET_DIR}/etc/nftables.rule
 chmod 0700 ${TARGET_DIR}/etc/nftables.rule
 
 # 刪除不需要的文件
+file=${TARGET_DIR}/etc/init.d/S50telnetd
+if [ -e ${file} ]; then
+    rm -v ${file}
+fi
+
 dir=${TARGET_DIR}/usr/share/applications
 if [ -e ${dir} ]; then
     rm -rv ${dir}

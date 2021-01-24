@@ -157,8 +157,10 @@ endif
 # sanitize the arguments passed from user space in registers.
 # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=82435
 ifeq ($(BR2_TOOLCHAIN_GCC_AT_LEAST_8),y)
-LINUX_MAKE_ENV += KCFLAGS=-Wno-attribute-alias
+BR2_LINUX_KCFLAGS += -Wno-attribute-alias
 endif
+
+LINUX_MAKE_ENV += KCFLAGS="$(BR2_LINUX_KCFLAGS)"
 
 ifeq ($(BR2_LINUX_KERNEL_DTB_OVERLAY_SUPPORT),y)
 LINUX_MAKE_ENV += DTC_FLAGS=-@

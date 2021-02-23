@@ -5,5 +5,10 @@ config BR2_PACKAGE_KMSCON
 	select BR2_PACKAGE_LIBTSM
 	select BR2_PACKAGE_LIBXKBCOMMON
 	help
-		Terminal Emulator
-	
+		Kmscon is a terminal emulator based on Linux's "kernel mode setting" (KMS).
+		It can replace the in-kernel virtual terminal (VT) implementation with a
+		user-space console.  Compared to the Linux console,
+		kmscon provides enhanced features
+		including XKB-compatible internationalized keyboard support,
+		UTF-8 input/font support, hardware-accelerated rendering,
+		multi-seat support, a replacement for `mingetty', and more

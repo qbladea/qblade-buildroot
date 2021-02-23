@@ -1,4 +1,7 @@
 config BR2_PACKAGE_UNIFONT
 	bool "unifont"
 	help
-		Unifont 
+		GNU Unifont is a bitmap font covering essentially all of
+		Unicode's Basic Multilingual Plane
+		The package also includes utilities
+		to ease adding new glyphs to the font.

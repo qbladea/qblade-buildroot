@@ -16,6 +16,8 @@ GIT_CONF=${HOME}/.gitconfig
 # 可能需要更改
 WORKING_DIR=${POS}/../
 
+echo "进入后请执行startup.sh"
+
 guix environment -C -N --no-cwd \
      -r ${PROFILE_REG} \
      --ad-hoc ncurses \

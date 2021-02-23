@@ -9,6 +9,4 @@ LIBTSM_SITE = $(call github,Aetf,libtsm,$(LIBTSM_VERSION))
 LIBTSM_INSTALL_STAGING = YES
 LIBTSM_SUPPORTS_IN_SOURCE_BUILD = NO
 
-
-
 $(eval $(cmake-package))

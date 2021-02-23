@@ -17,7 +17,7 @@ config BR2_ARCH_HAS_MMU_OPTIONAL
 
 choice
 	prompt "Target Architecture"
-	default BR2_i386
+	default BR2_x86_64
 	help
 	  Select the target architecture family to build for.
 

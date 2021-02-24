@@ -875,6 +875,7 @@ F:	package/ncmpc/
 F:	package/oniguruma/
 F:	package/oprofile/
 F:	package/pcmanfm/
+F:	package/perl-extutils-pkgconfig/
 F:	package/python-backcall/
 F:	package/python-jedi/
 F:	package/python-parso/
@@ -1051,11 +1052,6 @@ F:	package/python-pyjwt/
 F:	package/python-redis/
 F:	package/python-rpi-ws281x/
 F:	package/python-wtforms/
-
-N:	Guillaume Gardet <guillaume.gardet@oliseo.fr>
-F:	package/c-icap/
-F:	package/c-icap-modules/
-F:	package/sdl2/
 
 N:	Guillaume William Brs <guillaume.bressaix@gmail.com>
 F:	package/libnids/
@@ -2026,6 +2022,7 @@ N:	Pedro Aguilar <paguilar@paguilar.org>
 F:	package/libunistring/
 
 N:	Peter Korsgaard <peter@korsgaard.com>
+F:	board/arrow/avenger96/
 F:	board/beagleboneai/
 F:	board/minnowboard/
 F:	board/librecomputer/lafrite/
@@ -2035,6 +2032,7 @@ F:	board/orangepi/
 F:	board/pandaboard/
 F:	board/roseapplepi/
 F:	boot/shim/
+F:	configs/avenger96_defconfig
 F:	configs/beagleboneai_defconfig
 F:	configs/lafrite_defconfig
 F:	configs/minnowboard_max-graphical_defconfig
@@ -2203,10 +2201,6 @@ F:	package/gupnp-av/
 F:	package/let-me-create/
 F:	package/nanomsg/
 
-N:	Rahul Jain <rahul.jain@imgtec.com>
-F:	package/uhttpd/
-F:	package/ustream-ssl/
-
 N:	Ramon Fried <rfried.dev@gmail.com>
 F:	package/bitwise/
 
@@ -2348,10 +2342,6 @@ F:	package/ripgrep/
 
 N:	Santosh Multhalli <santosh.multhalli@rockwellcollins.com>
 F:	package/valijson/
-
-N:	Scott Fan <fancp2007@gmail.com>
-F:	package/libssh/
-F:	package/x11r7/xdriver_xf86-video-fbturbo/
 
 N:	Sébastien Szymanski <sebastien.szymanski@armadeus.com>
 F:	package/mmc-utils/
@@ -2725,6 +2715,7 @@ F:	package/fwup/
 N:	Yair Ben Avraham <yairba@protonmail.com>
 F:	package/casync/
 F:	package/gloox/
+F:	package/tpm2-pkcs11/
 
 N:	Yann CARDAILLAC <ycardaillac@sepro-group.com>
 F:	package/open62541/

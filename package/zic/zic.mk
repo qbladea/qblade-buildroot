@@ -12,7 +12,7 @@ ZIC_LICENSE = Public domain
 ZIC_LICENSE_FILES = LICENSE
 
 define HOST_ZIC_BUILD_CMDS
-	$(HOST_MAKE_ENV) $(MAKE) -C $(@D) zic
+	$(HOST_MAKE_ENV) $(MAKE) -C $(@D) zic CC=gcc
 endef
 
 define HOST_ZIC_INSTALL_CMDS

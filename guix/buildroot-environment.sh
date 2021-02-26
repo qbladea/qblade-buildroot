@@ -39,5 +39,5 @@ guix environment -C -N --no-cwd \
      --ad-hoc gawk sed grep diffutils patch inetutils\
      --ad-hoc procps psmisc gzip zstd xz bzip2 less tar\
      --ad-hoc ncurses which rsync linux-libre-headers unzip\
-     --ad-hoc libtool cpio perl python file bc make\
+     --ad-hoc libtool cpio perl python file bc make qemu\
      --share=${WORKING_DIR}

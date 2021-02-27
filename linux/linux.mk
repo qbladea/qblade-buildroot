@@ -17,7 +17,7 @@ LINUX_CPE_ID_PRODUCT = linux_kernel
 LINUX_CPE_ID_PREFIX = cpe:2.3:o
 
 define LINUX_HELP_CMDS
-	@echo '  linux-menuconfig       - Run Linux kernel menuconfig'
+	@echo '  linux-nconfig          - Run Linux kernel nconfig'
 	@echo '  linux-savedefconfig    - Run Linux kernel savedefconfig'
 	@echo '  linux-update-defconfig - Save the Linux configuration to the path specified'
 	@echo '                             by BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE'
